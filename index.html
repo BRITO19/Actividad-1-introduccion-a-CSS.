@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCCIÓN AL CSS
+    </title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <h1>DISEÑADOR DE PÁGINAS WEB, CSS Y JAVASCRIPT
+        </h1>
+
+        <h3>MÓDULO 3
+            INTRODUCCIÓN AL CSS</h3>
+    </header>
+    
+    <ol>
+        <li>Definición de CSS</li>
+        <p>CSS, o Cascading Style Sheets, es un lenguaje de diseño utilizado para describir
+            la presentación y el formato de un documento escrito en HTML o XML. CSS
+            permite a los desarrolladores definir aspectos como el color, las fuentes, el
+            espaciado y la disposición de los elementos en una página web. Su uso facilita la
+            separación del contenido (HTML) de la presentación (CSS), lo que mejora la
+            mantenibilidad y la flexibilidad del diseño web.</p>
+
+        <li>Funcionamiento Básico de CSS</li>
+        <p>Separación de la estructura y la presentación. CSS permite separar el contenido
+            HTML de su presentación visual. Es decir, te permite mantener el código HTML
+            limpio y estructurado, mientras que el estilo se define en un archivo CSS
+            separado. Este orden mejora la legibilidad del código y facilita el
+            mantenimiento, así como la actualización de los estilos.
+            </p>
+        <p>Consistencia y mantenibilidad. Al utilizar CSS, puedes aplicar estilos de manera
+            consistente a un sitio o aplicación web. Los estilos se definen una vez y se
+            aplican a múltiples elementos en las páginas, lo que favorece la renovación de la
+            apariencia visual de todo el proyecto.
+            </p>
+        <p>Eficiencia en el rendimiento. CSS permite cargar estilos externos en un archivo
+            separado. Con esto, el navegador almacenará en caché los estilos y los aplicará a
+            todas las páginas del sitio, lo que mejora el rendimiento al reducir la cantidad de
+            datos que deben transferirse entre el servidor y el cliente.</p>
+        <p>Flexibilidad y control. Asimismo, ofrece una amplia gama de propiedades y
+            selectores con los que tendrás un control preciso sobre el estilo de los elementos
+            HTML. Podrás modificar, de forma sencilla, los colores, fuentes, márgenes,
+            tamaños, diseños, etc. Gracias a esta característica, podrás personalizar y adaptar
+            a varios dispositivos y tamaños de pantalla tu sitio web.</p>
+
+        <li>Incluir CSS en un archivo HTML</li>
+        <p>Existen tres formas principales de incluir CSS en un archivo HTML:</p>
+            <ol>
+                <li>CSS Interno</li>
+                <p> Se incluye en la sección < head > del documento HTML dentro de un bloque
+                     < "style"> Este método es útil para estilos específicos de una sola página.
+                </p>
+
+                <li>CSS Externo</li>
+                <p>Se utiliza un archivo CSS separado y se enlaza en la sección < "head" > del HTML
+                    con la etiqueta <"link">. Este método es ideal para mantener el código limpio y
+                    reutilizar estilos en múltiples páginas.</p>
+
+                <p>Crea un archivo CSS, por ejemplo, estilos.css:
+                </p>
+                <li>CSS Inline</li>
+                <p>Se aplica directamente a un elemento HTML utilizando el atributo style. Este
+                    método es menos recomendado para mantener la separación de estilos, pero es
+                    útil para estilos rápidos.</p>
+            </ol>
+        <li>Definición de una regla CSS </li>
+        <p>Una regla CSS es una declaración que define cómo se deben estilizar uno o más
+            elementos HTML. Consiste en dos partes principales: el selector y el bloque de
+            declaraciones.</p>
+            <p>Componentes de una Regla CSS:</p>
+
+            <ul>
+                <li>Selector: </li>
+                <p>Especifica a qué elementos se aplicarán los estilos. Puede ser una
+                    etiqueta HTML, una clase, un ID o una combinación de ellos</p>
+                <li>Bloque de Declaraciones:</li>
+                <p>Se encuentra entre llaves {} y contiene una o más
+                    declaraciones de estilo. Cada declaración está formada por una propiedad y un
+                    valor, separados por dos puntos: Las declaraciones se separan con punto y coma;</p>
+            </ul>
+
+        <li>Elemento de una regla CSS</li>
+        <ul>
+            <li>Regla</li>
+            <p>Una regla CSS es la combinación de un selector y un bloque de
+                declaraciones. Define cómo se deben estilizar los elementos HTML
+                seleccionados.</p>
+
+            <li>Selector</li>
+            <p>El selector especifica a qué elemento(s) HTML se aplicarán los estilos
+                definidos en la regla. Puede ser:</p>
+
+                <ul>
+                    <li>Etiqueta: Por ejemplo, h1, p.</li>
+                    <li>Clase: Por ejemplo, .clase.</li>
+                    <li>ID: Por ejemplo, #id.
+                    </li>
+                    <li>Combinaciones: Como div p, que selecciona < p > dentro de < div >.</li>
+                </ul>
+
+            <li>Bloque de declaración</li>
+            <p>Es la parte de la regla que contiene las declaraciones de estilo. Se encuentra
+                entre llaves {}. Dentro del bloque, se pueden incluir múltiples declaraciones.</p>
+
+            <li>Propiedad
+                <p>Una propiedad es un aspecto del estilo que deseas cambiar. Algunas
+                    propiedades comunes incluyen:
+                    </p>
+
+                    <ul>
+                        <li>color: El color del texto</li>
+                        <li>font-size: El tamaño de la fuente.
+                        </li>
+                        <li>margin: El espacio exterior alrededor de un elemento.</li>
+                    </ul>
+            </li>
+            <li>Valor</li>
+            <p>El valor es lo que se asigna a una propiedad específica. Por ejemplo:</p>
+            <ul>
+                <li>Para color, un valor podría ser red o #ff0000.</li>
+                <li>Para font-size, un valor podría ser 16px o 1em</li>
+            </ul>
+        </ul>
+        <li>Medios CSS</li>
+        <p>Una de las características más importantes de las hojas de estilos CSS es que
+            permiten definir diferentes estilos para diferentes medios o dispositivos:
+            pantallas, impresoras, móviles, proyectores, etc.
+            </p>
+        <p>Los medios más utilizados actualmente son screen (para definir el aspecto de la
+            página en pantalla) y print (para definir el aspecto de la página cuando se
+            imprime), seguidos de handheld (que define el aspecto de la página cuando se
+            visualiza mediante un dispositivo móvil).</p>
+        <p>Las reglas @media son un tipo especial de regla CSS que permiten indicar de
+            forma directa el medio o medios en los que se aplicarán los estilos incluidos en
+            la regla. Para especificar el medio en el que se aplican los estilos, se incluye su
+            nombre después de @media. Si los estilos se aplican a varios medios, se
+            incluyen los nombres de todos los medios separados por comas</p>
+        <p>A continuación, se muestra un ejemplo sencillo:
+        </p>
+        <p>@media print {
+            body { font-size: 10pt }
+           }</p>
+        <p>@media screen {
+            body { font-size: 13px }
+           }
+           </p>
+
+        <p>@media screen, print {
+            body { line-height: 1.2 }
+           }
+</p>
+        <li>Comentarios CSS</li>
+        <p>Los comentarios en CSS son útiles para agregar notas o explicaciones dentro del
+            código sin que afecten la ejecución de los estilos. Esto ayuda a mantener el
+            código organizado y comprensible, especialmente cuando se trabaja en
+            proyectos más grandes.</p>
+
+        <li>Sintaxis de la definición de las propiedades CSS</li>
+
+        <p>Sintaxis General
+        </p>
+        <p>La definición de una propiedad CSS se compone de una propiedad y un valor,
+            separados por dos puntos: y terminados con un punto y coma;. Todo esto se
+            coloca dentro de un bloque de declaraciones, que está encerrado entre llaves {}.</p>
+        <p>Componentes</p>
+       <ul>
+        <li>Selector: Especifica el elemento HTML al que se aplicará la regla.</li>
+        <li>Propiedad: Es el aspecto del estilo que deseas modificar (por ejemplo,
+            color, font-size, margin).</li>
+        <li>Valor: Especifica cómo se debe aplicar la propiedad (por ejemplo, red,
+            16px, 10%).</li>
+       </ul>
+    </ol>
+</body>
+</html>
